@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useCallback, useEffect } from "react";
 
-import { useHandleStreamResponse } from "../utilities/runtime-helpers";
+import { useHandleStreamResponse } from "../utilities/runtime-helpers.jsx";
 
 function MainComponent() {
   const [scheduledItems, setScheduledItems] = useState([]);
@@ -1418,13 +1418,13 @@ function MainComponent() {
         html, body {
           overscroll-behavior-y: none;
         }
-        
+
         .scheduled-container,
         .unscheduled-container {
           overscroll-behavior-y: none;
           -webkit-overflow-scrolling: touch;
         }
-        
+
         .sliding-animation {
           transition: transform 0.2s ease-out;
         }
@@ -1484,13 +1484,13 @@ function MainComponent() {
             transition: all 0.2s ease-out;
             background: white;
           }
-          
+
           .swipe-item.swiping {
             background: white;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
                       0 2px 4px -1px rgba(0, 0, 0, 0.06);
           }
-          
+
           .drag-placeholder {
             background: rgba(0, 0, 0, 0.05);
             border-radius: 0.375rem;
