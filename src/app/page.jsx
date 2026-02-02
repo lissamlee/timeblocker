@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useCallback, useEffect } from "react";
 
-import { useHandleStreamResponse } from "../utilities/runtime-helpers.jsx";
+import { useHandleStreamResponse } from "../utilities/runtime-helpers.js";
 
 function MainComponent() {
   const [scheduledItems, setScheduledItems] = useState([]);
